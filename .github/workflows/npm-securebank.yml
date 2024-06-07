@@ -1,0 +1,10 @@
+name: NPM Scan Secure Bank
+on: [pull_request]
+jobs:
+NPM-Scan:
+  runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - run: npm ci
+      run: npm scan
+      
