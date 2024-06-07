@@ -3,7 +3,7 @@ version: '3'
 services:
   securebank:
     build: ./src/SecureBank
-    container_name: wmas-securebank
+    container_name: securebank
     depends_on:
       - mssql
       - maildev
